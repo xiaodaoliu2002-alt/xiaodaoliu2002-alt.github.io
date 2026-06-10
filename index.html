@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="刘昕然的个人项目网站，展示 AI Native 产品设计、交互原型、多模态评测与硬件体验项目。"
+    />
+    <title>刘昕然 | Work</title>
+    <link rel="stylesheet" href="styles.css?v=20260611e" />
+    <script src="app.js?v=20260611e" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">跳到项目索引</a>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="回到首页">
+        <span>刘昕然</span>
+        <span>Portfolio 2026</span>
+      </a>
+      <nav class="top-links" aria-label="主导航">
+        <a href="#work">Work</a>
+        <a href="#profile">Profile</a>
+        <a href="mailto:2533342@tongji.edu.cn">Mail</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="home-hero home-hero--dark" id="home" data-section="Home" aria-labelledby="home-title">
+        <div class="home-hero__top">
+          <span>Folio:06</span>
+          <span>Liu Xinran</span>
+          <span>©2026</span>
+        </div>
+
+        <span class="home-cross home-cross--top-left" aria-hidden="true">+</span>
+        <span class="home-cross home-cross--top-right" aria-hidden="true">+</span>
+        <span class="home-cross home-cross--bottom-left" aria-hidden="true">+</span>
+        <span class="home-cross home-cross--bottom-right" aria-hidden="true">+</span>
+
+        <div class="home-hero__center">
+          <p>AI Product / Interaction Design / Research</p>
+          <h1 id="home-title">AI Product<br />Design Research</h1>
+        </div>
+
+        <div class="home-hero__meta">
+          <span>Avail: 06.2026</span>
+          <span>Shanghai, CN</span>
+        </div>
+
+        <div class="home-strip" data-home-carousel aria-label="项目预览">
+          <img
+            class="home-strip__backdrop"
+            src="assets/pdf-pages/focus-easy/page-11.jpg"
+            alt=""
+            aria-hidden="true"
+            data-home-backdrop
+          />
+          <div class="home-carousel" aria-label="项目封面轮播">
+            <div class="home-carousel__track">
+              <a
+                class="home-cover is-active"
+                href="#focus-easy"
+                data-home-slide
+                data-bg="assets/pdf-pages/focus-easy/page-11.jpg"
+                aria-current="true"
+              >
+                <img src="assets/pdf-pages/focus-easy/page-11.jpg" alt="Focus Easy 项目封面" loading="eager" />
+                <strong>Focus Easy</strong>
+              </a>
+              <a
+                class="home-cover is-after"
+                href="#benchmark"
+                data-home-slide
+                data-bg="assets/img/benchmark.png"
+              >
+                <img src="assets/img/benchmark.png" alt="AI Benchmark 项目封面" loading="lazy" />
+                <strong>AI Benchmark</strong>
+              </a>
+              <a
+                class="home-cover"
+                href="#rhythmride"
+                data-home-slide
+                data-bg="assets/img/rhythmride.png"
+              >
+                <img src="assets/img/rhythmride.png" alt="RhythmRide 项目封面" loading="lazy" />
+                <strong>RhythmRide</strong>
+              </a>
+              <a class="home-cover is-before" href="#aura" data-home-slide data-bg="assets/img/aura.jpg">
+                <img src="assets/img/aura.jpg" alt="Aura 福灵项目封面" loading="lazy" />
+                <strong>Aura 福灵</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-hero" id="work" data-section="Intro" aria-labelledby="work-title">
+        <div class="hero-kicker">
+          <span>Selected work</span>
+          <span>Interaction Design / AI Systems</span>
+        </div>
+
+        <div class="work-hero__grid">
+          <div class="project-list" aria-label="项目列表">
+            <a class="project-link is-active" href="#focus-easy" data-preview="assets/img/focus-easy.jpg">
+              <span class="project-link__number">(01)</span>
+              <span class="project-link__title">Focus Easy</span>
+              <span class="project-link__meta">AI Native Agent / 2025</span>
+            </a>
+            <a class="project-link" href="#benchmark" data-preview="assets/img/benchmark.png">
+              <span class="project-link__number">(02)</span>
+              <span class="project-link__title">AI Benchmark</span>
+              <span class="project-link__meta">Model Evaluation / 2026</span>
+            </a>
+            <a class="project-link" href="#rhythmride" data-preview="assets/img/rhythmride.png">
+              <span class="project-link__number">(03)</span>
+              <span class="project-link__title">RhythmRide</span>
+              <span class="project-link__meta">AI Hardware / 2026</span>
+            </a>
+            <a class="project-link" href="#aura" data-preview="assets/pdf-pages/aura/page-02.jpg">
+              <span class="project-link__number">(04)</span>
+              <span class="project-link__title">Aura 福灵</span>
+              <span class="project-link__meta">Mental Health Agent / 2026</span>
+            </a>
+          </div>
+
+          <figure class="hero-preview" aria-label="当前项目预览">
+            <img src="assets/img/focus-easy.jpg" alt="Focus Easy 项目预览" />
+          </figure>
+        </div>
+
+        <div class="hero-title-row">
+          <h1 id="work-title">Work</h1>
+        </div>
+      </section>
+
+      <section class="project-sections" aria-label="项目详情">
+        <article class="project" id="focus-easy" data-project data-title="Focus Easy">
+          <div class="project__media" data-project-stage>
+            <video
+              src="assets/video/focus-easy-full.m4v"
+              poster="assets/img/focus-easy.jpg"
+              muted
+              loop
+              playsinline
+              controls
+              preload="none"
+              data-stage-video
+            ></video>
+            <img class="stage-pdf" data-stage-pdf alt="" hidden />
+            <button class="stage-arrow stage-arrow--prev" type="button" data-stage-prev aria-label="上一页 PDF" hidden>←</button>
+            <button class="stage-arrow stage-arrow--next" type="button" data-stage-next aria-label="下一页 PDF" hidden>→</button>
+            <button class="stage-video-toggle" type="button" data-stage-video-toggle hidden>Video</button>
+          </div>
+          <div class="pdf-strip" aria-label="Focus Easy PDF 页面预览">
+            <div class="pdf-strip__header">
+              <span>Proposal PDF</span>
+              <a href="assets/docs/focus-easy.pdf" target="_blank" rel="noreferrer">Open original</a>
+            </div>
+            <div class="pdf-strip__viewer">
+              <button class="pdf-strip__button pdf-strip__button--prev" type="button" data-strip-prev aria-label="向左滚动 PDF 页面">←</button>
+              <div class="pdf-pages" data-pdf-pages>
+              <img src="assets/pdf-pages/focus-easy/page-01.jpg" alt="Focus Easy 方案 PDF第 1 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-02.jpg" alt="Focus Easy 方案 PDF第 2 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-03.jpg" alt="Focus Easy 方案 PDF第 3 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-04.jpg" alt="Focus Easy 方案 PDF第 4 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-05.jpg" alt="Focus Easy 方案 PDF第 5 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-06.jpg" alt="Focus Easy 方案 PDF第 6 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-07.jpg" alt="Focus Easy 方案 PDF第 7 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-08.jpg" alt="Focus Easy 方案 PDF第 8 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-09.jpg" alt="Focus Easy 方案 PDF第 9 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-10.jpg" alt="Focus Easy 方案 PDF第 10 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-11.jpg" alt="Focus Easy 方案 PDF第 11 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-12.jpg" alt="Focus Easy 方案 PDF第 12 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-13.jpg" alt="Focus Easy 方案 PDF第 13 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-14.jpg" alt="Focus Easy 方案 PDF第 14 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-15.jpg" alt="Focus Easy 方案 PDF第 15 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-16.jpg" alt="Focus Easy 方案 PDF第 16 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-17.jpg" alt="Focus Easy 方案 PDF第 17 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-18.jpg" alt="Focus Easy 方案 PDF第 18 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-19.jpg" alt="Focus Easy 方案 PDF第 19 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-20.jpg" alt="Focus Easy 方案 PDF第 20 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-21.jpg" alt="Focus Easy 方案 PDF第 21 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-22.jpg" alt="Focus Easy 方案 PDF第 22 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-23.jpg" alt="Focus Easy 方案 PDF第 23 页" loading="lazy" />
+              <img src="assets/pdf-pages/focus-easy/page-24.jpg" alt="Focus Easy 方案 PDF第 24 页" loading="lazy" />
+              </div>
+              <button class="pdf-strip__button pdf-strip__button--next" type="button" data-strip-next aria-label="向右滚动 PDF 页面">→</button>
+            </div>
+          </div>
+          <div class="project__content">
+            <div class="project__heading">
+              <span>(01)</span>
+              <h2>Focus Easy 智能情境推荐 Agent</h2>
+            </div>
+            <div class="project__body">
+              <dl>
+                <div>
+                  <dt>Role</dt>
+                  <dd>产品设计负责人</dd>
+                </div>
+                <div>
+                  <dt>Time</dt>
+                  <dd>2025.9-2025.11</dd>
+                </div>
+                <div>
+                  <dt>System</dt>
+                  <dd>情境识别 / GenUI / 自适应信息密度 / n8n Agent 链路</dd>
+                </div>
+              </dl>
+              <p>
+                使用大语言模型增强情境理解的个性化专注模式推荐系统，将时间、地点、网络、蓝牙与面部距离等情境信号转译为用户隐性意图。
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" id="benchmark" data-project data-title="AI Benchmark">
+          <div class="project__media project__media--image">
+            <img src="assets/img/benchmark.png" alt="AI Benchmark 项目展示图" />
+          </div>
+          <div class="project__content">
+            <div class="project__heading">
+              <span>(02)</span>
+              <h2>面向中国传统非遗纹样数字设计的多模态模型能力基准测试</h2>
+            </div>
+            <div class="project__body">
+              <dl>
+                <div>
+                  <dt>Time</dt>
+                  <dd>2026.3-2026.5</dd>
+                </div>
+                <div>
+                  <dt>Metric</dt>
+                  <dd>CLIP-S / 语义元素覆盖率 / 三维文化语境覆盖率</dd>
+                </div>
+                <div>
+                  <dt>Pipeline</dt>
+                  <dd>批量 API 调用 / 结果解析 / 自动打分 / 多模型对比</dd>
+                </div>
+              </dl>
+              <p>
+                收集 500 幅中国传统非遗纹样，建立分级测试集、语义一致性任务与文化语境联想任务，输出结构化评估结果与 Badcase 分析。
+              </p>
+              <div class="project-actions">
+                <a
+                  href="https://05rubytang.github.io/-benchmark/%E6%95%B0%E6%8D%AE%E5%B1%95%E7%A4%BA%E9%A1%B5%E9%9D%A2/benchmark_report.html"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  查看在线报告
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" id="rhythmride" data-project data-title="RhythmRide">
+          <div class="project__media">
+            <video
+              src="assets/video/rhythmride-full.m4v"
+              poster="assets/img/rhythmride.png"
+              muted
+              loop
+              playsinline
+              controls
+              preload="none"
+            ></video>
+          </div>
+          <div class="project__content">
+            <div class="project__heading">
+              <span>(03)</span>
+              <h2>RhythmRide AI 音乐骑行陪伴硬件产品</h2>
+            </div>
+            <div class="project__body">
+              <dl>
+                <div>
+                  <dt>Time</dt>
+                  <dd>2026.5-2026.6</dd>
+                </div>
+                <div>
+                  <dt>Prototype</dt>
+                  <dd>IMU 传感器 / WebSocket / React 前端 / M5Stack 硬件</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>踏频到音乐节奏、动画与同步状态的映射</dd>
+                </div>
+              </dl>
+              <p>
+                面向城市骑行、情侣骑行与亲子骑行，把踏频传感、实时反馈、同步合奏和 AI 音乐生成组织成一条轻运动社交体验。
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" id="aura" data-project data-title="Aura 福灵">
+          <div class="project__media" data-project-stage>
+            <video
+              src="assets/video/aura-full.m4v"
+              poster="assets/pdf-pages/aura/page-02.jpg"
+              muted
+              loop
+              playsinline
+              controls
+              preload="none"
+              data-stage-video
+            ></video>
+            <img class="stage-pdf" data-stage-pdf alt="" hidden />
+            <button class="stage-arrow stage-arrow--prev" type="button" data-stage-prev aria-label="上一页 PDF" hidden>←</button>
+            <button class="stage-arrow stage-arrow--next" type="button" data-stage-next aria-label="下一页 PDF" hidden>→</button>
+            <button class="stage-video-toggle" type="button" data-stage-video-toggle hidden>Video</button>
+          </div>
+          <div class="pdf-strip" aria-label="Aura 福灵 PDF 页面预览">
+            <div class="pdf-strip__header">
+              <span>Proposal PDF</span>
+              <a href="assets/docs/aura.pdf" target="_blank" rel="noreferrer">Open original</a>
+            </div>
+            <div class="pdf-strip__viewer">
+              <button class="pdf-strip__button pdf-strip__button--prev" type="button" data-strip-prev aria-label="向左滚动 PDF 页面">←</button>
+              <div class="pdf-pages" data-pdf-pages>
+              <img src="assets/pdf-pages/aura/page-01.jpg" alt="Aura 福灵方案 PDF第 1 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-02.jpg" alt="Aura 福灵方案 PDF第 2 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-03.jpg" alt="Aura 福灵方案 PDF第 3 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-04.jpg" alt="Aura 福灵方案 PDF第 4 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-05.jpg" alt="Aura 福灵方案 PDF第 5 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-06.jpg" alt="Aura 福灵方案 PDF第 6 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-07.jpg" alt="Aura 福灵方案 PDF第 7 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-08.jpg" alt="Aura 福灵方案 PDF第 8 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-09.jpg" alt="Aura 福灵方案 PDF第 9 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-10.jpg" alt="Aura 福灵方案 PDF第 10 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-11.jpg" alt="Aura 福灵方案 PDF第 11 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-12.jpg" alt="Aura 福灵方案 PDF第 12 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-13.jpg" alt="Aura 福灵方案 PDF第 13 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-14.jpg" alt="Aura 福灵方案 PDF第 14 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-15.jpg" alt="Aura 福灵方案 PDF第 15 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-16.jpg" alt="Aura 福灵方案 PDF第 16 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-17.jpg" alt="Aura 福灵方案 PDF第 17 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-18.jpg" alt="Aura 福灵方案 PDF第 18 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-19.jpg" alt="Aura 福灵方案 PDF第 19 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-20.jpg" alt="Aura 福灵方案 PDF第 20 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-21.jpg" alt="Aura 福灵方案 PDF第 21 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-22.jpg" alt="Aura 福灵方案 PDF第 22 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-23.jpg" alt="Aura 福灵方案 PDF第 23 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-24.jpg" alt="Aura 福灵方案 PDF第 24 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-25.jpg" alt="Aura 福灵方案 PDF第 25 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-26.jpg" alt="Aura 福灵方案 PDF第 26 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-27.jpg" alt="Aura 福灵方案 PDF第 27 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-28.jpg" alt="Aura 福灵方案 PDF第 28 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-29.jpg" alt="Aura 福灵方案 PDF第 29 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-30.jpg" alt="Aura 福灵方案 PDF第 30 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-31.jpg" alt="Aura 福灵方案 PDF第 31 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-32.jpg" alt="Aura 福灵方案 PDF第 32 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-33.jpg" alt="Aura 福灵方案 PDF第 33 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-34.jpg" alt="Aura 福灵方案 PDF第 34 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-35.jpg" alt="Aura 福灵方案 PDF第 35 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-36.jpg" alt="Aura 福灵方案 PDF第 36 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-37.jpg" alt="Aura 福灵方案 PDF第 37 页" loading="lazy" />
+              <img src="assets/pdf-pages/aura/page-38.jpg" alt="Aura 福灵方案 PDF第 38 页" loading="lazy" />
+              </div>
+              <button class="pdf-strip__button pdf-strip__button--next" type="button" data-strip-next aria-label="向右滚动 PDF 页面">→</button>
+            </div>
+          </div>
+          <div class="project__content">
+            <div class="project__heading">
+              <span>(04)</span>
+              <h2>Aura 福灵 个人心理健康服务系统</h2>
+            </div>
+            <div class="project__body">
+              <dl>
+                <div>
+                  <dt>Role</dt>
+                  <dd>产品设计与策略负责人</dd>
+                </div>
+                <div>
+                  <dt>Time</dt>
+                  <dd>2026.3-2026.4</dd>
+                </div>
+                <div>
+                  <dt>Strategy</dt>
+                  <dd>EAP 线下触点 / XR 叙事营销 / 蚂蚁生态入口与流转路径</dd>
+                </div>
+              </dl>
+              <p>
+                基于蚂蚁阿福的心理增值服务模块设计，探索 AI 眼镜线下触点与手机端商业化转化平台的双端协同路径。
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="profile" id="profile" data-section="Profile" aria-labelledby="profile-title">
+        <div class="profile__image">
+          <img src="assets/img/profile.jpg" alt="刘昕然个人照片" />
+        </div>
+        <div class="profile__copy">
+          <p class="section-label">Profile</p>
+          <h2 id="profile-title">AI 产品与体验之间的系统型实践。</h2>
+          <p>
+            天津大学建筑学本科，同济大学设计创意学院设计学硕士在读。研究兴趣为交互设计、用户体验设计、AI 为媒介的在线网络社交设计。
+          </p>
+          <p>
+            曾在字节跳动绿洲工作室负责 PC 端游戏《Mistfall Hunter》的交互策划、界面开发协作与组件库建设。
+          </p>
+          <a href="assets/docs/resume.docx">下载个人资料</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact" data-section="Contact">
+      <span>Contact</span>
+      <a href="mailto:2533342@tongji.edu.cn">2533342@tongji.edu.cn</a>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <nav class="project-dock" aria-label="项目快速导航">
+      <button type="button" data-dock="prev" aria-label="上一个项目">↑</button>
+      <a href="#work" data-dock-title>Focus Easy</a>
+      <button type="button" data-dock="next" aria-label="下一个项目">↓</button>
+    </nav>
+
+  </body>
+</html>

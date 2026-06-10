@@ -1,0 +1,11 @@
+.DS_Store
+
+# Source material folders are kept locally. The deployable copies live in assets/.
+个人资料/
+Aura 福灵/
+focus easy/
+rhythmride/
+benchmark/
+
+# Keep deployable website assets tracked.
+!assets/
