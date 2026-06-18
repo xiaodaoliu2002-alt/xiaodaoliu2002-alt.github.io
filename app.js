@@ -151,6 +151,8 @@ pdfStrips.forEach((strip) => {
   const prevStage = stage?.querySelector("[data-stage-prev]");
   const nextStage = stage?.querySelector("[data-stage-next]");
   const videoToggle = stage?.querySelector("[data-stage-video-toggle]");
+  const defaultStageSrc = stageImage?.getAttribute("src") || "";
+  const defaultStageAlt = stageImage?.getAttribute("alt") || "";
 
   if (!pages || !images.length || !stage || !stageImage) return;
 
@@ -221,10 +223,20 @@ pdfStrips.forEach((strip) => {
   }
 
   function showVideo() {
-    if (video) video.hidden = false;
-    stageImage.hidden = true;
-    stageImage.removeAttribute("src");
-    stageImage.alt = "";
+    if (video) {
+      video.hidden = false;
+      stageImage.hidden = true;
+      stageImage.removeAttribute("src");
+      stageImage.alt = "";
+    } else if (defaultStageSrc) {
+      stageImage.src = defaultStageSrc;
+      stageImage.alt = defaultStageAlt;
+      stageImage.hidden = false;
+    } else {
+      stageImage.hidden = true;
+      stageImage.removeAttribute("src");
+      stageImage.alt = "";
+    }
     [prevStage, nextStage, videoToggle].forEach((control) => {
       if (control) control.hidden = true;
     });
